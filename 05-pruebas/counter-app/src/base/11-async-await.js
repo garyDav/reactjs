@@ -1,4 +1,4 @@
-export const getImagen = async _ => {
+export const getImagen = async () => {
   try {
     const apiKey = 'iXix7BibZFCUkHSieyy5kWOCWjHtuYoH'
     const resp = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${ apiKey }`)
@@ -13,7 +13,4 @@ export const getImagen = async _ => {
     return 'No existe'
   }
 }
-
-getImagen()
-
 

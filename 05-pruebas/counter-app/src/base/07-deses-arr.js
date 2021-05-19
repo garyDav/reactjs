@@ -1,28 +1,19 @@
 
-
 const personajes = ['Goku','Vegeta','Trunks'];
 
 const [ , , p3 ] = personajes;
 
-console.log( p3 );
-
-const retornaArreglo = () => {
+export const retornaArreglo = () => {
   return ['ABC', 123];
 }
 
-const [ letras, numeros ] = retornaArreglo();
-console.log( letras, numeros )
+// const [ letras, numeros ] = retornaArreglo();
 
 // Tarea
 // 1. El primer valor del arr se llamará nombre
 // 2. El segundo llamará setNombre
-const joder = ( valor ) => {
+const useStatePrueba = ( valor ) => {
   return [ valor, () => { console.log('Hola Mundo') } ];
 }
-
-const [ nombre, setNombre ] = joder('Goku')
-
-console.log( nombre );
-setNombre();
 
 
